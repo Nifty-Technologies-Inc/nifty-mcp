@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.niftypm/mcp-server",
+  "description": "Nifty's MCP server — exposes tasks, projects, messages, and files as tools for AI agents.",
+  "repository": {
+    "url": "https://github.com/Nifty-Technologies-Inc/nifty-mcp",
+    "source": "github",
+    "id": "1421094623"
+  },
+  "websiteUrl": "https://docs.nifty.pm/mcp",
+  "version": "0.9.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.niftypm.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token: a Nifty Personal Access Token (nft_user_* / nft_agent_*, minted at https://app.nifty.pm/settings/personal-access-tokens) or an OAuth 2.1 access token from the Nifty authorization server.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
