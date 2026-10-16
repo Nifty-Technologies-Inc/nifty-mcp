@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "nifty": {
+      "url": "https://mcp.niftypm.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${env:NIFTY_PAT}"
+      }
+    }
+  }
+}

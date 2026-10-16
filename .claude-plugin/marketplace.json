@@ -1,0 +1,17 @@
+{
+  "name": "nifty",
+  "owner": {
+    "name": "Nifty Technologies, Inc.",
+    "email": "dev@niftypm.com"
+  },
+  "metadata": {
+    "description": "Nifty's official Claude Code plugin: the hosted Nifty MCP server."
+  },
+  "plugins": [
+    {
+      "name": "nifty",
+      "source": "./",
+      "description": "Nifty's hosted MCP server: tasks, projects, messages, documents and files."
+    }
+  ]
+}

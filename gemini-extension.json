@@ -1,0 +1,21 @@
+{
+  "name": "nifty",
+  "version": "0.9.0",
+  "description": "Connects Gemini CLI to your Nifty workspace through Nifty's hosted MCP server: tasks, projects, messages, documents and files.",
+  "mcpServers": {
+    "nifty": {
+      "httpUrl": "https://mcp.niftypm.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${NIFTY_PAT}"
+      }
+    }
+  },
+  "settings": [
+    {
+      "name": "Nifty personal access token",
+      "description": "Create one at https://app.nifty.pm/settings/personal-access-tokens",
+      "envVar": "NIFTY_PAT",
+      "sensitive": true
+    }
+  ]
+}

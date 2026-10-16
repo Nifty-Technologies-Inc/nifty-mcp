@@ -1,0 +1,19 @@
+{
+  "name": "nifty",
+  "description": "Connects Cursor to your Nifty workspace through Nifty's hosted MCP server: tasks, projects, messages, documents and files.",
+  "version": "0.9.0",
+  "author": {
+    "name": "Nifty Technologies, Inc.",
+    "email": "dev@niftypm.com"
+  },
+  "homepage": "https://docs.nifty.pm/mcp",
+  "repository": "https://github.com/Nifty-Technologies-Inc/nifty-mcp",
+  "license": "MIT",
+  "keywords": [
+    "nifty",
+    "mcp",
+    "project-management",
+    "tasks"
+  ],
+  "logo": "logo-512.png"
+}

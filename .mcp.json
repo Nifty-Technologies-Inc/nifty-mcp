@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "nifty": {
+      "type": "http",
+      "url": "https://mcp.niftypm.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${NIFTY_PAT}"
+      }
+    }
+  }
+}

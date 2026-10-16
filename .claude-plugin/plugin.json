@@ -1,0 +1,19 @@
+{
+  "name": "nifty",
+  "version": "0.9.0",
+  "description": "Connects Claude to your Nifty workspace through Nifty's hosted MCP server: tasks, projects, messages, documents and files.",
+  "author": {
+    "name": "Nifty Technologies, Inc.",
+    "email": "dev@niftypm.com",
+    "url": "https://nifty.pm"
+  },
+  "homepage": "https://docs.nifty.pm/mcp",
+  "repository": "https://github.com/Nifty-Technologies-Inc/nifty-mcp",
+  "license": "MIT",
+  "keywords": [
+    "nifty",
+    "mcp",
+    "project-management",
+    "tasks"
+  ]
+}
