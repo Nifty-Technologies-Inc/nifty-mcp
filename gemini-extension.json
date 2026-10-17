@@ -1,6 +1,6 @@
 {
   "name": "nifty",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Connects Gemini CLI to your Nifty workspace through Nifty's hosted MCP server: tasks, projects, messages, documents and files.",
   "mcpServers": {
     "nifty": {

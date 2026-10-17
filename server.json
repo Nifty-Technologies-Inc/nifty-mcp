@@ -7,8 +7,8 @@
     "source": "github",
     "id": "1421094623"
   },
-  "websiteUrl": "https://docs.nifty.pm/mcp",
-  "version": "0.9.0",
+  "websiteUrl": "https://help.niftypm.com/en/articles/15603530-nifty-mcp-server-connect-your-ai-assistants",
+  "version": "0.9.1",
   "remotes": [
     {
       "type": "streamable-http",
