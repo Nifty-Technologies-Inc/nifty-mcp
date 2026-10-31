@@ -78,30 +78,39 @@ putting the whole header value in `env`:
 
 ## Tools
 
-Tools are grouped by domain, and each domain has three verbs: `_query` (browse, filter, paginate,
-full-text search), `_mutate` (create, update, link relations, bulk writes) and `_destroy` (delete).
+Tools are grouped by domain, and each domain has four verbs: `_query` (browse, filter, paginate,
+full-text search), `_create` (create, link relations, upload, append — additive only, never
+overwrites or removes), `_mutate` (update, unlink relations, bulk updates; it still accepts the
+create operations for now) and `_destroy` (delete).
 
 | Tool | What it does |
 |------|--------------|
 | `tasks_query` | Find tasks, checklists and reminders |
+| `tasks_create` | Create or link tasks, checklists and reminders |
 | `tasks_mutate` | Create or update tasks, checklists and reminders |
 | `tasks_destroy` | Delete tasks, checklists and reminders |
 | `planning_query` | Find projects, portfolios, milestones and goals |
+| `planning_create` | Create or link projects, portfolios, milestones and goals |
 | `planning_mutate` | Create or update projects, portfolios, milestones and goals |
 | `planning_destroy` | Delete projects, portfolios, milestones and goals |
 | `communication_query` | Find chats, messages and check-ins |
+| `communication_create` | Create or link chats, messages and check-ins |
 | `communication_mutate` | Create or update chats, messages and check-ins |
 | `communication_destroy` | Delete chats, messages and check-ins |
 | `knowledge_query` | Find docs and files |
+| `knowledge_create` | Create, upload or append to docs and files |
 | `knowledge_mutate` | Create or update docs and files |
 | `knowledge_destroy` | Delete docs and files |
 | `people_query` | Find members |
+| `people_create` | Create member statuses |
 | `people_mutate` | Invite or update members |
 | `people_destroy` | Remove members |
 | `reporting_query` | Find time entries, charts and project activity |
+| `reporting_create` | Create or link time entries and charts |
 | `reporting_mutate` | Create or update time entries and charts |
 | `reporting_destroy` | Delete time entries and charts |
 | `admin_query` | Find labels, roles, favorites and custom fields |
+| `admin_create` | Create labels and favorites |
 | `admin_mutate` | Create or update labels, roles and favorites |
 | `admin_destroy` | Delete labels, roles and favorites |
 
@@ -119,6 +128,13 @@ permissions. The server only sees what you can see.
 - `standup_digest`: Draft a Yesterday / Today / Blockers standup update from your tasks.
 - `meeting_notes_to_tasks`: Turn meeting notes into well-formed tasks in a project, after your review.
 - `find_and_update`: Find the tasks matching a description and apply a change — with a review step first.
+
+## Skills
+
+The same six workflows ship as plugin skills in [`skills/`](./skills), so hosts that install this
+repository as a plugin (Claude Code, the OpenAI plugin directory) offer them without the MCP prompts
+API: `plan-my-week`, `project-status-digest`, `triage-overdue-tasks`, `standup-digest`,
+`meeting-notes-to-tasks` and `find-and-update`.
 
 ## Docs and support
 
