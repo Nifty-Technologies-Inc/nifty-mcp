@@ -105,7 +105,7 @@ create operations for now) and `_destroy` (delete).
 | `people_create` | Create member statuses |
 | `people_mutate` | Invite or update members |
 | `people_destroy` | Remove members |
-| `reporting_query` | Find time entries, charts and project activity |
+| `reporting_query` | Find time entries, charts, project activity and change history |
 | `reporting_create` | Create or link time entries and charts |
 | `reporting_mutate` | Create or update time entries and charts |
 | `reporting_destroy` | Delete time entries and charts |
