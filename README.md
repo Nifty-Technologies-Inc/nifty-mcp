@@ -93,9 +93,9 @@ create operations for now) and `_destroy` (delete).
 | `planning_create` | Create or link projects, portfolios, milestones and goals |
 | `planning_mutate` | Create or update projects, portfolios, milestones and goals |
 | `planning_destroy` | Delete projects, portfolios, milestones and goals |
-| `communication_query` | Find chats, messages and check-ins |
+| `communication_query` | Find chats, messages, check-ins and notifications |
 | `communication_create` | Create or link chats, messages and check-ins |
-| `communication_mutate` | Create or update chats, messages and check-ins |
+| `communication_mutate` | Create or update chats, messages and check-ins; mark notifications read |
 | `communication_destroy` | Delete chats, messages and check-ins |
 | `knowledge_query` | Find docs and files |
 | `knowledge_create` | Create, upload or append to docs and files |
